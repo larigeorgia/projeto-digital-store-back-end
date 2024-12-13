@@ -1,7 +1,8 @@
 const UsuarioService = require('../services/UsuarioService')
 
-class UsuarioController {
+/*classe que se comunica com a service usuario*/ 
 
+class UsuarioController {
 
     async listar(req, res){
         return UsuarioService.listar().then((response)=>{
@@ -35,7 +36,7 @@ class UsuarioController {
                 }
             }catch {
                 return res.status(404).json({
-                    message: "erro, por favor tente nov"
+                    message: "erro, por favor tente novamente"
                 }) 
             }
         });

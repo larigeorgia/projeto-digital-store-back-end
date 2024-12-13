@@ -26,11 +26,10 @@ TabelaUsuarios.init(
             {
                 type: DataTypes.STRING(50),
                 allowNull: false,
-                unique: true
             },
         password:
             {
-                type: DataTypes.STRING(50),
+                type: DataTypes.STRING(100),
                 allowNull: false
             }
     },
@@ -41,6 +40,5 @@ TabelaUsuarios.init(
     }
 )
 
-// database.sync()
 
 module.exports = TabelaUsuarios

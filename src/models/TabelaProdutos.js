@@ -5,10 +5,18 @@ class TabelaProdutos extends Model {}
 
 TabelaProdutos.init(
     {
+        id: 
+        {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true 
+        },
         enabled:
             {
                 type: DataTypes.BOOLEAN,
-                allowNull: true
+                allowNull: true,
+                defaultValue:0
             },
         name: 
             {
@@ -23,12 +31,14 @@ TabelaProdutos.init(
         use_in_menu:
             {
                 type: DataTypes.BOOLEAN,
-                allowNull: false
+                allowNull: false,
+                defaultValue:0
             },
         stock:
             {
                 type: DataTypes.INTEGER,
-                allowNull: true
+                allowNull: true,
+                defaultValue:0
             },
         description:
             {

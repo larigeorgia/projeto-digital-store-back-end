@@ -1,10 +1,11 @@
 const {DataTypes, Model} = require('sequelize')
 const database = require('../config/database')
 const TabelaProdutos = require('../models/TabelaProdutos')
+const TabelaCategoria = require('../models/TabelaCategoria')
 
-class ImagensProduto extends Model {}
+class ProdutosCategorias extends Model {}
 
-ImagensProduto.init(
+ProdutosCategorias.init(
     {
         id: 
         {
@@ -13,7 +14,8 @@ ImagensProduto.init(
             allowNull: false,
             primaryKey: true 
         },
-        product_id:{
+        product_id:
+        {
             type: DataTypes.INTEGER,
             allowNull: false,
             references:{
@@ -21,22 +23,22 @@ ImagensProduto.init(
                 key:'id'
             }
         },
-        enabled:
-            {
-                type: DataTypes.BOOLEAN,
-                defaultValue:0
-            },
-        path:
-            {
-                type: DataTypes.STRING(50),
-                allowNull: false,
+        category_id:
+        {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references:{
+                model: TabelaCategoria,
+                key:'id'
             }
+        },
+
     },
     {
         sequelize: database,
         timestamps: false,
-        tableName: "imagens_produto"
+        tableName: "produtos_categorias"
     }
 )
 
-module.exports = ImagensProduto
+module.exports = ProdutosCategorias
