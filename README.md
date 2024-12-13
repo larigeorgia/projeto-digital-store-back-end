@@ -1,6 +1,6 @@
 # Projeto Digital Store Back-end
 
-Este é o repositório para o projeto de uma API RESTFUL para Loja online Digital Store. Neste projeto foram utilizadas tecnologias como Node, Express, Sequelize e várias outras tecnologias.
+Este é o repositório para o projeto de uma API RESTFUL para Loja online Digital Store. Neste projeto foram utilizadas tecnologias como Node, Express, Sequelize e dentre outras.
 
 ## **Índice**
 - [Pré-requisitos](#pré-requisitos)
