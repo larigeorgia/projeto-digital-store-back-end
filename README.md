@@ -1,6 +1,6 @@
 # Projeto Digital Store Back-end
 
-Este é o repositório para o projeto de uma API RESTFUL para o projeto da Loja Online Digital Store. Este projeto utiliza Node, Express, Sequelize e várias outras tecnologias.
+Este é o repositório para o projeto de uma API RESTFUL para Loja online Digital Store. Neste projeto foram utilizadas tecnologias como Node, Express, Sequelize e várias outras tecnologias.
 
 ## **Índice**
 - [Pré-requisitos](#pré-requisitos)
@@ -68,6 +68,12 @@ Na pasta DB execute o arquivo syncDB.js com o comando:
 
 ```bash
 node src/DB/syncDB.js
+```
+
+Ou se já estiver na pasta DB: 
+
+```bash
+node syncDB.js
 ```
 
 ## **Rodando o Projeto**
